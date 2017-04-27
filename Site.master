@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GVG</title>
+    
+    <link rel="stylesheet" href="CSS/Sitemaster.css"  type="text/css"  />
+    
+
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+    <div>
+
+        <div id="wrapper">
+
+        
+            <div id="banner">
+                <!-- image retrieveed from goooge and designed with Photoshop -->
+                <div id="img"><asp:Image ID="Image1" runat="server" ImageUrl="~/Image/Banner1.jpg" />
+
+                </div>
+                
+         
+            </div>
+            
+        
+        
+            <div id="navigation">
+                <ul id="nav">
+                    <li>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/Product.aspx">Product</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink4" runat="server">Management</asp:HyperLink></li>
+                </ul>
+         
+            </div>
+            <hr />
+            
+            
+            
+            <div id="Content">
+           
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+                    
+           
+                </asp:ContentPlaceHolder>
+
+        </div>
+        </div>
+    </div>
+        <hr />
+        <div id="footer">
+            &copy; Copyright JC/LCB 2017<br />
+
+            <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a>
+
+        </div>
+        
+    </form>
+</body>
